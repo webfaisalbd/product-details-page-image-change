@@ -14,23 +14,31 @@
 
         <div class="select-img">
             <div class="img1-div">
-                <img class="img1" src="images/img1.jpg" alt="">
+                <img class="img1" src="images/img1.jpg" onclick="myFunction(this)">
             </div>
             <div class="img2-div">
-                <img class="img2" src="images/img2.jpg" alt="">
+                <img class="img2" src="images/img2.jpg" onclick="myFunction(this)">
             </div>
             <div class="img3-div">
-                <img class="img3" src="images/img3.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="main-img">
-            <div class="main-img-box">
-                <img class="img4" src="images/img4.jpg" alt="">
+                <img class="img3" src="images/img3.jpg" onclick="myFunction(this)">
             </div>
         </div>
         
+        <div class="main-img">
+            <div class="main-img-box">
+                <img id="main-img-id" class="img4" src="images/img4.jpg" alt="">
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        function myFunction(clickImg){
+            let mainImgId = document.getElementById("main-img-id");
+            mainImgId.src = clickImg.src;
+        }
+    </script>
 </body>
+
 
 </html>
