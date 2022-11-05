@@ -18,13 +18,13 @@
 
         <div class="select-img">
             <div class="img1-div">
-                <img class="img1" src="images/img1.jpg" onclick="myFunction(this)">
+                <img class="myImg img1" src="images/img1.jpg">
             </div>
             <div class="img2-div">
-                <img class="img2" src="images/img2.jpg" onclick="myFunction(this)">
+                <img class="myImg img2" src="images/img2.jpg">
             </div>
             <div class="img3-div">
-                <img class="img3" src="images/img3.jpg" onclick="myFunction(this)">
+                <img class="myImg img3" src="images/img3.jpg">
             </div>
         </div>
         
@@ -37,10 +37,21 @@
 
 
     <script>
-        function myFunction(clickImg){
-            let mainImgId = document.getElementById("main-img-id");
-            mainImgId.src = clickImg.src;
-        }
+        // function myFunction(clickImg){
+        //     let mainImgId = document.getElementById("main-img-id");
+        //     mainImgId.src = clickImg.src;
+        // }
+
+
+        let myImg = document.querySelectorAll('.myImg');
+        let mainImgId = document.getElementById("main-img-id");
+
+        myImg.forEach((img) => {
+            img.addEventListener('click',function(){
+                // console.log(img);
+                mainImgId.src = img.src;
+            })
+        })
     </script>
 </body>
 
