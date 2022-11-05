@@ -7,7 +7,52 @@
 .container {
     width: 90%;
     background: lightblue;
-    margin: 0 auto;
+    margin: 5% auto;
 
     display: flex;
+}
+
+.select-img{
+    flex-basis: 50%;
+    max-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-img > div {
+    height: 100px;
+    width: 100px;
+    margin: 5%;
+}
+
+.img1,
+.img2,
+.img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: 2px solid blue;
+}
+
+.main-img {
+    flex-basis: 50%;
+    max-height: 500px;
+    border: 2px solid green;
+}
+
+.main-img-box {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background: lightcyan;
+    border: 2px solid red;
+}
+
+.main-img-box > .img4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
