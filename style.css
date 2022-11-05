@@ -8,4 +8,6 @@
     width: 90%;
     background: lightblue;
     margin: 0 auto;
+
+    display: flex;
 }
