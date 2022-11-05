@@ -6,20 +6,20 @@
 
 .container {
     width: 90%;
-    background: lightblue;
-    margin: 5% auto;
+    /* background: lightblue; */
+    margin: 2% auto;
 
     display: flex;
 }
 
 .select-img{
-    flex-basis: 50%;
+    flex-basis: 30%;
     max-height: 500px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .select-img > div {
@@ -35,20 +35,30 @@
     height: 100%;
     object-fit: fill;
     border: 2px solid blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    opacity: 0.7;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
 }
 
 .main-img {
-    flex-basis: 50%;
+    flex-basis: 70%;
     max-height: 500px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .main-img-box {
     width: 400px;
     height: 400px;
-    margin: 0 auto;
-    background: lightcyan;
-    border: 2px solid red;
+    margin: 5% auto;
+    /* background: lightcyan; */
+    border: 2px solid blue;
 }
 
 .main-img-box > .img4 {
